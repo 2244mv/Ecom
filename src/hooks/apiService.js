@@ -1,4 +1,4 @@
-// import axiosInstance from "../config/apiConfig";
+ import axiosInstance from "../config/apiConfig";
 
 export const apiService = {
   get: async (url, params = {}) => {
