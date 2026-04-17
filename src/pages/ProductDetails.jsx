@@ -300,6 +300,7 @@ const ProductDetails = () => {
       {/* LEFT: IMAGE */}
       <div className="bg-gray-100 p-6 rounded-lg flex justify-center items-center">
         <img
+          loading="lazy"
           src={product.image}
           alt={product.title}
           className="h-80 object-contain hover:scale-105 transition duration-300"

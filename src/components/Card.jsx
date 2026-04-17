@@ -10,7 +10,8 @@ const Card = ({ product }) => {
       
       <Link to={`/productDetails/${product.id}`}>
         <img
-          className="h-40 w-full object-contain p-4 rounded-t-lg"
+          loading="lazy"
+          className="h-40 w-full object-contain p-4 rounded-t-lg "
           src={product.image}
           alt={product.title}
         />

@@ -28,6 +28,7 @@ const UserMenu = () => {
         className="flex rounded-full"
       >
         <img
+          loading="lazy"
           className="w-8 h-8 rounded-full"
           src={userPrinciple?.image}
           alt="user"
@@ -143,7 +144,7 @@ const NavBar = () => {
         
         {/* LOGO */}
         <Link to="/" className="flex items-center gap-2">
-          <img src="/favicon.svg" className="h-8" />
+          <img src="/favicon.svg" className="h-8" loading="lazy"/>
           <span className="text-xl font-bold dark:text-white">Ecom</span>
         </Link>
 

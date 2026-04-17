@@ -20,6 +20,7 @@ const About = () => {
       {/* CONTENT */}
       <div className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-10">
         <img
+          loading="lazy"
           src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df"
           className="rounded-2xl shadow-lg"
         />

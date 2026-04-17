@@ -6,7 +6,7 @@ const Footer = () => {
           {/* LOGO */}
           <div className="mb-6 md:mb-0">
             <a href="" className="flex items-center">
-              <img src="/favicon.svg" className="h-8 me-3" />
+              <img src="/favicon.svg" className="h-8 me-3" loading="lazy"/>
               <span className="text-2xl font-semibold dark:text-white">
                 Ecom
               </span>

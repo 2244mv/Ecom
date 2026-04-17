@@ -41,6 +41,7 @@ const Cart = () => {
             className="flex gap-4 p-4 border rounded-2xl shadow-sm"
           >
             <img
+              loading="lazy"
               src={item.image}
               alt={item.title}
               className="w-28 h-28 object-cover rounded-xl"

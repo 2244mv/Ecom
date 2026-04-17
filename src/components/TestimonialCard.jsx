@@ -7,6 +7,7 @@ const TestimonialCard = ({ item }) => {
       transition-colors duration-300 hover:shadow-lg"
     >
       <img
+        loading="lazy"
         src={item.image}
         alt={item.name}
         className="w-20 h-20 rounded-full mx-auto mb-4"

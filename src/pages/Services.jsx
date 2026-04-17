@@ -78,6 +78,7 @@ const Services = () => {
       <div className="max-w-6xl mx-auto px-6 py-14 grid md:grid-cols-2 gap-10 items-center">
 
         <img
+          loading="lazy"
           src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da"
           className="rounded-2xl shadow-lg"
         />
