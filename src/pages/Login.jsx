@@ -7,7 +7,7 @@ const Login = () => {
   const { login } = useAuth();
   const {
     register,
-    handleSubmit,
+    handleSubmit, 
     formState: { errors },
     reset,
   } = useForm();

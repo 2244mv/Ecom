@@ -47,9 +47,7 @@ const UserMenu = () => {
               <p className="text-sm font-medium dark:text-white">
                 {userPrinciple?.name}
               </p>
-              <p className="text-xs text-gray-500">
-                {userPrinciple?.email}
-              </p>
+              <p className="text-xs text-gray-500">{userPrinciple?.email}</p>
             </div>
 
             <ul className="py-2 text-sm">
@@ -141,29 +139,32 @@ const NavBar = () => {
   return (
     <nav className="bg-white dark:bg-gray-900 shadow sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
-        
         {/* LOGO */}
         <Link to="/" className="flex items-center gap-2">
-          <img src="/favicon.svg" className="h-8" loading="lazy"/>
+          <img src="/favicon.svg" className="h-8" loading="lazy" />
           <span className="text-xl font-bold dark:text-white">Ecom</span>
         </Link>
 
         {/* DESKTOP MENU */}
         <div className="hidden md:flex gap-6 items-center">
-          <NavLink to="/" className={linkClass}>Home</NavLink>
-          <NavLink to="/about" className={linkClass}>About</NavLink>
-          <NavLink to="/services" className={linkClass}>Services</NavLink>
-          <NavLink to="/contact" className={linkClass}>Contact</NavLink>
+          <NavLink to="/" className={linkClass}>
+            Home
+          </NavLink>
+          <NavLink to="/about" className={linkClass}>
+            About
+          </NavLink>
+          <NavLink to="/services" className={linkClass}>
+            Services
+          </NavLink>
+          <NavLink to="/contact" className={linkClass}>
+            Contact
+          </NavLink>
         </div>
 
         {/* RIGHT SIDE */}
         <div className="flex items-center gap-4">
-
           {/* DARK MODE */}
-          <button
-            onClick={toggleTheme}
-            className="text-xl dark:text-white"
-          >
+          <button onClick={toggleTheme} className="text-xl dark:text-white">
             {darkMode ? "☀️" : "🌙"}
           </button>
 
@@ -210,17 +211,49 @@ const NavBar = () => {
             exit={{ height: 0 }}
             className="md:hidden bg-white dark:bg-gray-900 px-4 pb-4"
           >
-            <NavLink to="/" onClick={() => setMenuOpen(false)} className={linkClass}>Home</NavLink>
-            <NavLink to="/about" onClick={() => setMenuOpen(false)} className={linkClass}>About</NavLink>
-            <NavLink to="/services" onClick={() => setMenuOpen(false)} className={linkClass}>Services</NavLink>
-            <NavLink to="/contact" onClick={() => setMenuOpen(false)} className={linkClass}>Contact</NavLink>
+            <NavLink
+              to="/"
+              onClick={() => setMenuOpen(false)}
+              className={linkClass}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="/about"
+              onClick={() => setMenuOpen(false)}
+              className={linkClass}
+            >
+              About
+            </NavLink>
+            <NavLink
+              to="/services"
+              onClick={() => setMenuOpen(false)}
+              className={linkClass}
+            >
+              Services
+            </NavLink>
+            <NavLink
+              to="/contact"
+              onClick={() => setMenuOpen(false)}
+              className={linkClass}
+            >
+              Contact
+            </NavLink>
 
             {!isLoggedIn && (
               <div className="mt-3 flex flex-col gap-2">
-                <Link to="/login" onClick={() => setMenuOpen(false)} className="text-blue-600">
+                <Link
+                  to="/login"
+                  onClick={() => setMenuOpen(false)}
+                  className="text-blue-600"
+                >
                   Login
                 </Link>
-                <Link to="/register" onClick={() => setMenuOpen(false)} className="text-green-600">
+                <Link
+                  to="/register"
+                  onClick={() => setMenuOpen(false)}
+                  className="text-green-600"
+                >
                   Register
                 </Link>
               </div>

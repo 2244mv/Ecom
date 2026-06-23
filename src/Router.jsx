@@ -9,11 +9,9 @@ import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
 import Services from "./pages/Services";
 import ProductDetails from "./pages/ProductDetails";
-import LearnUseEffect from "./components/LearnUseEffect";
-import TestWrapping from "./components/TestWrapping";
 import Pricing from "./pages/Pricing";
 import Cart from "./pages/Cart";
-import AdminDashboard from "./pages/AdminDashboard"; // ✅ import added
+import AdminDashboard from "./pages/AdminDashboard";
 
 const router = createBrowserRouter([
   {
@@ -50,13 +48,11 @@ const router = createBrowserRouter([
         element: <Cart />,
       },
 
-      // ✅ ADMIN DASHBOARD ROUTE
       {
         path: "dashboard/admin",
         element: <AdminDashboard />,
       },
 
-      // (optional dropdown pages)
       {
         path: "settings",
         element: <h1 className="text-3xl text-center mt-10">Settings Page</h1>,
@@ -70,20 +66,11 @@ const router = createBrowserRouter([
         path: "services",
         element: <Services />,
       },
-      {
-        path: "learnUseEffect",
-        element: <LearnUseEffect />,
-      },
-      {
-        path: "wrapping",
-        element: <TestWrapping />,
-      },
+
       {
         path: "productDetails/:id",
         element: <ProductDetails />,
       },
-
-      // ❗ ALWAYS KEEP LAST
       {
         path: "*",
         element: <NotFound />,
