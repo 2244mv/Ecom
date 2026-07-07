@@ -4,12 +4,12 @@ import { motion, AnimatePresence } from "motion/react";
 import useAuth from "../hooks/useAuth";
 import { useSelector } from "react-redux";
 
-/* USER MENU */
+//  USER MENU 
 const UserMenu = () => {
   const { userPrinciple, logout } = useAuth();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  /* CLOSE DROPDOWN ON OUTSIDE CLICK */
+  // CLOSE DROPDOWN ON OUTSIDE CLICK 
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (!e.target.closest(".user-menu")) {
@@ -93,7 +93,7 @@ const UserMenu = () => {
   );
 };
 
-/* NAVBAR */
+// NAVBAR 
 const NavBar = () => {
   const { isLoggedIn } = useAuth();
   const cartItems = useSelector((state) => state.cart.cartItems);
@@ -116,7 +116,7 @@ const NavBar = () => {
     }
   }, []);
 
-  /* TOGGLE THEME */
+  // TOGGLE THEME 
   const toggleTheme = () => {
     if (darkMode) {
       document.documentElement.classList.remove("dark");
@@ -178,7 +178,7 @@ const NavBar = () => {
             )}
           </NavLink>
 
-          {/* AUTH */}
+           {/* AUTH  */}
           {isLoggedIn ? (
             <UserMenu />
           ) : (
