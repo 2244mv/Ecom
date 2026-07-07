@@ -37,7 +37,7 @@ const HeroSlider = () => {
           <img
             src={slide.imageUrl}
             alt={`slide-${index}`}
-            className="h-125 w-full object-cover"
+            className="h-140 w-full object-fit"
             loading="lazy"
           />
         </SwiperSlide>
